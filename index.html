@@ -126,35 +126,33 @@
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal-new">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form class="todoform">
-                <div class="input-group mb-3">
-                    <input type="text" placeholder="Add a new Task .." class="todo-input form-control" id="textInput"
-                        required />
-                        <select id="categorySelect" class="form-select" >
-                            <option value="work">Work</option>
-                            <option value="personal">Personal</option>
-                            <option value="shopping">Shopping</option>
-                            <option value="shopping">Household</option>
-                            
-                        </select>
-                        
-                        
-                        
-                    <div class="abc">
-                        <button id="todo-button" class="todo-button" type="submit">
-                            <i class="fas fa-plus-square"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+    <input type="time" class="deadline-time-input form-control" id="deadlineTimeInput" placeholder="Select a time" />
 
+<!-- Modified Modal content -->
+<div id="myModal" class="modal-new">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="todoform">
+            <div class="input-group mb-3">
+                <input type="text" placeholder="Add a new Task .." class="todo-input form-control" id="textInput" required />
+                <input type="date" class="deadline-input form-control" id="deadlineInput" placeholder="Select a date" />
+                <!-- Add the time input field -->
+                <input type="time" class="deadline-time-input form-control" id="deadlineTimeInput" placeholder="Select a time" />
+                <select id="categorySelect" class="form-select">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="household">Household</option>
+                </select>
+                <div class="abc">
+                    <button id="todo-button" class="todo-button" type="submit">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
     <div style="color: whitesmoke; font-size: xx-small" class="no-to-do-item">
         <h1>THE LIST IS EMPTY !</h1>
     </div>
